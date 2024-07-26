@@ -1,0 +1,115 @@
+#Write a program to create a set.
+fruits = set(["red","green","black","red"])
+print(fruits)
+
+numbers = set([10,20,3,20,40,1])
+print(numbers)
+
+
+list = {1,2,3,4,3,2}
+print(type[list])
+
+
+numbers = [10,20,3,20,40,1,20,3]
+print(set(numbers))
+
+
+#Write program to iterate over sets.
+fruits = {"apple","orange","cherry"}
+for fruit in fruits:
+    print(fruits)
+
+
+
+#Write a Python program to add member to a set.
+numbers = set()
+numbers.add(1)
+numbers.add(2)
+numbers.add(3)
+numbers.add(4)
+numbers.add(5)
+print(numbers)
+
+#Write a Python program to remove item from a given set.
+numbers = {10,20,3,20,40,1,20,3}
+numbers.remove(20)
+print(numbers)
+
+
+#Write a python program to create a intersection of set ?
+set1 = {10,20,10,30,40,50,40}
+set2 = {60,70,20,30,50}
+print(set1 & set2)
+
+
+#rite a python program to createa union of set ?
+numbers1 = {100,200,300,400}
+numbers2 = {400,500,600,700}
+print(numbers1|numbers2)
+
+numbers1 = {100,200,300,400}
+numbers2 = {400,500,600,700}
+union = numbers1 | numbers2
+print(union)
+
+
+#Write a python program to create set differance ? 
+my_set = {1,2,3,4,5}
+my_set1 = {1,4,6,7}
+print(my_set - my_set1)
+
+
+#Write a python program to create a symmetric defferance ?
+set1 = {1,2,4,7,8,9}
+set2 = {2,4,6,8,9}
+
+set3 = set1.symmetric_difference(set2)
+print(set3)
+
+#write a python program to find max and min values in a set?
+
+grades = [20,90,30,70,50,40]
+max_value = max(grades)
+min_value = min(grades)
+print("maximum value:", max_value)
+print("minimum value:", min_value)
+
+
+
+#Given two Python sets, write a Python program to update the first set with items that exist only in the first set and not in the second set.
+set1 = {1,2,3,4}
+set2 = {3,4,5,6}
+set1.difference_update(set2)
+print(set1)
+
+
+#Write a Python program to remove items 10, 20, 30 from the following set at once.
+
+my_set ={10,20,30,40,50,60,70}
+iteam_to_remove = {10,20,30}
+my_set.difference_update(iteam_to_remove)
+print(my_set)
+
+
+#Check if two sets have any elements in common. If yes, display the common elements?
+set1 = {10,20,30,40}
+set2 = {30,40,20,60}
+common_elements =  set1.intersection(set2)
+if common_elements:
+   print("common_elements:", common_elements)
+else:
+    print(" no common elements found")
+
+
+#Update set1 by adding items from set2, except common items?
+set_1 = {1,2,3,4}
+set_2 = {3,4,5,6}
+set_1.update(set_2 - set_1)
+print(set_1)
+
+#Remove items from set1 that are not common to both set1 and set2?
+
+set_1 = {1,2,3,4}
+set_2 = {3,4,5,6}
+set_1.intersection_update(set_2)
+print(set_1)
